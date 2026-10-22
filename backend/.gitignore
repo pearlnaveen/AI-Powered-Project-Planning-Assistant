@@ -1,0 +1,19 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+
+# Database & logs
+*.db
+*.sqlite
+*.sqlite3
+project_plans.db
+*.log

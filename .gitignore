@@ -1,0 +1,93 @@
+# ==============================================================================
+# Security & Environment Variables (CRITICAL: Never commit secrets to git)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+*.env
+*.key
+*.pem
+*.cert
+secrets.json
+credentials.json
+
+# ==============================================================================
+# Python Artifacts & Virtual Environments
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==============================================================================
+# Databases & Runtime State
+# ==============================================================================
+*.db
+*.sqlite
+*.sqlite3
+backend/project_plans.db
+*.log
+logs/
+
+# ==============================================================================
+# Node & Frontend Build Artifacts
+# ==============================================================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==============================================================================
+# OS & IDE Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

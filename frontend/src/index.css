@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg-dark: #0b0f19;
+  --bg-card: #111827;
+  --bg-card-hover: #1f2937;
+  --border-color: #1f2937;
+  --border-hover: #374151;
+
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary: #7c3aed;
+  
+  --accent-cyan: #0891b2;
+  --accent-emerald: #059669;
+  --accent-amber: #d97706;
+  --accent-rose: #e11d48;
+
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+  --text-dim: #6b7280;
+
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Clean Card Utility (No Glassmorphism) */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.glass-panel-interactive {
+  transition: all 0.2s ease;
+}
+.glass-panel-interactive:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Code & Mono blocks */
+pre, code {
+  font-family: var(--font-mono);
+}
+
+.gradient-text {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.badge-indigo {
+  background: #1e1b4b;
+  color: #a5b4fc;
+  border: 1px solid #312e81;
+}
+.badge-emerald {
+  background: #064e3b;
+  color: #6ee7b7;
+  border: 1px solid #047857;
+}
+.badge-amber {
+  background: #451a03;
+  color: #fcd34d;
+  border: 1px solid #78350f;
+}
+.badge-rose {
+  background: #4c0519;
+  color: #fda4af;
+  border: 1px solid #881337;
+}
+.badge-cyan {
+  background: #083344;
+  color: #67e8f9;
+  border: 1px solid #155e75;
+}
+
+/* React Flow customizations */
+.react-flow__node {
+  border-radius: 8px !important;
+  font-family: var(--font-main) !important;
+}
+.react-flow__edge-path {
+  stroke: #6366f1 !important;
+  stroke-width: 2 !important;
+}
+.react-flow__attribution {
+  display: none !important;
+}
